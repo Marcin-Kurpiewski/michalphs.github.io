@@ -1,0 +1,1 @@
+!function(){var e=new Siema({selector:".portfolio__slider",duration:500,perPage:1,startIndex:0,draggable:!0,loop:!0});setInterval(function(){return e.next()},2e4)}();

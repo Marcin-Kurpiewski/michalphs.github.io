@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Michał Mazur Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <button class="nav__toggle">
+                <span class="toggle__line"></span>
+                <span class="toggle__line"></span>
+                <span class="toggle__line"></span>
+            </button>
+            <div class="nav__logo">
+                <h3 class="nav__name">Michał
+                    <span class="nav__name--color">Mazur</span>
+                </h3>
+                <p class="nav__text">Siema! Witam Cię na moim portfolio.</p>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list__item">
+                    <a href="index.html" class="nav__list__link">Strona Główna</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="realizacje.html" class="nav__list__link nav__list__link--active">Realizacje</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="o_mnie.html" class="nav__list__link">O mnie</a>
+                </li>
+            </ul>
+            <div class="nav__box">
+                <a href="o_mnie.html" class="btn nav__btn">Spieszy mi się!</a>
+            </div>
+            <div class="nav__social">
+                <a href="https://github.com/michalphs" target="_blank">
+                    <span class="fa fa-github nav__icon" aria-hidden="true"></span>
+                </a>
+                <a href="https://codepen.io/Michalphs" target="_blank">
+                    <span class="fa fa-codepen nav__icon" aria-hidden="true"></span>
+                </a>
+                <a href="https://linkedin.com/in/michalphs" target="_blank">
+                    <span class="fa fa-linkedin nav__icon" aria-hidden="true"></span>
+                </a>
+                <a href="mailto:michalphs@gmail.com" class="nav__mail">michalphs@gmail.com</a>
+            </div>
+        </div>
+    </nav>
+    <section class="portfolio">
+        <div class="container portfolio__container">
+            <div class="row portfolio__row">
+                <header class="portfolio__header">
+                    <h3 class="portfolio__header__title">Realizacje</h3>
+                </header>
+                <div class="portfolio__slider">
+                    <div class="portfolio__block">
+                        <div class="portfolio__image">
+                            <img src="img/mockups/heyu2.png" alt="Strona aplikacji mobilnej z darmowego pliku .psd" class="portfolio__img">
+                        </div>
+                        <div class="portfolio-description">
+                            <h4 class="portfolio-description__title">HeyU</h4>
+                            <p class="portfolio-description__text">Strona aplikacji mobilnej zrealizowana z darmowego projektu .psd, starałem wykonać się ją w metodologi
+                                BEM, oraz czystym javascripcie, jedynie została w niej wykorzystana lekka bilbioteka siema.js.
+                                Strone zrobiłem w ramach treningu.</p>
+
+                            <h5 class="portfolio-description__tech">Wykorzystane technologie:</h5>
+                            <div class="portfolio-description__icons">
+                                <img src="img/logos/html.svg" class="portfolio-description__img" alt="Logo html5, które przedstawia białą cyfrę, pięc na tle czerwonego pięciokąta."
+                                    class="html 5" title="html 5">
+                                <img src="img/logos/css.svg" class="portfolio-description__img" alt="Logo css3, które przedstawia białą cyfrę, trzy na tle niebieskiego pięciokąta."
+                                    title="css 3">
+                                <img src="img/logos/sass.svg" class="portfolio-description__img" alt="Logo sass, które przedstawia różowy napis sass." title="sass">
+                                <img src="img/logos/js.svg" class="portfolio-description__img" alt="Logo javascriptu, które przedstawia czarny napis js na tle żóltego prostokąta."
+                                    title="javascript">
+                            </div>
+                            <a href="https://michalphs.github.io/heyu/" target="_blank" class="btn btn--live">Zobacz online</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__block">
+                        <div class="portfolio__image">
+                            <img src="img/mockups/crossbox2.png" alt="Strona dla siłowni Crossbox" class="portfolio__img">
+                        </div>
+                        <div class="portfolio-description">
+                            <h4 class="portfolio-description__title">CrossBox</h4>
+                            <p class="portfolio-description__text">Strona stworzona dla siłowni znajdującej się w Oleśnicy, została zrealizowana na zlecenie studia
+                                JNM Design.
+                                <span class="portfolio-description__text--small">Strona mogła ulec zmianie, ponieważ w domyśle miała zostać podpięta pod cms.</span>
+                            </p>
+                            <h5 class="portfolio-description__tech">Wykorzystane technologie:</h5>
+                            <div class="portfolio-description__icons">
+                                <img src="img/logos/html.svg" class="portfolio-description__img" alt="Logo html5, które przedstawia białą cyfrę, pięc na tle czerwonego pięciokąta."
+                                    class="html 5">
+                                <img src="img/logos/css.svg" class="portfolio-description__img" alt="Logo css3, które przedstawia białą cyfrę, trzy na tle niebieskiego pięciokąta."
+                                    title="css 3">
+                                <img src="img/logos/sass.svg" class="portfolio-description__img" alt="Logo sass, które przedstawia różowy napis sass." title="sass">
+                                <img src="img/logos/js.svg" class="portfolio-description__img" alt="Logo javascriptu, które przedstawia czarny napis js na tle żóltego prostokąta."
+                                    title="javascript">
+                            </div>
+                            <a href="http://crossboxolesnica.pl" target="_blank" class="btn btn--live">Zobacz online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/siema.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
