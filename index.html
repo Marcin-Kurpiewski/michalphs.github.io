@@ -7,65 +7,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Michał Mazur">
     <meta name="description" content="Portfolio junior front-end developera, Michała Mazura. Potrzebujesz strony? Skontaktuj się ze mną.">
-    <meta name="keywords" content="Strony Internetowe, sklepy, junior front-end developer, kodowanie psd, javascript, js, css, html">  
+    <meta name="keywords" content="Strony Internetowe, sklepy, junior front-end developer, kodowanie psd, javascript, js, css, html">
     <title>Michał Mazur Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&subset=latin-ext">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav" aria-labelledby="nav-labal">
+        <h1 id="nav-label" class="nav__label"></h1>
         <div class="nav__container">
-            <button class="nav__toggle">
+            <button class="nav__toggle toggle" aria-expanded="false" title="Otwórz/Zamknij menu">
                 <span class="toggle__line"></span>
                 <span class="toggle__line"></span>
                 <span class="toggle__line"></span>
+                <span class="toggle__label">Otwórz/Zamknij menu</span>
             </button>
             <div class="nav__logo">
-                <h3 class="nav__name">Michał
-                    <span class="nav__name--color">Mazur</span>
-                </h3>
-                <p class="nav__text">Siema! Witam Cię na moim portfolio.</p>
+                <h2 class="nav__name">Michał
+                    <span class="nav__name-color">Mazur</span>
+                </h2>
+                <p class="nav__text">Witam Cię na moim portfolio.</p>
             </div>
-            <ul class="nav__list">
-                <li class="nav__list__item">
-                    <a href="index.html" class="nav__list__link nav__list__link--active">Strona Główna</a>
+            <ul class="nav__list list">
+                <li class="list__item">
+                    <a href="/" class="list__link list__link--active">Strona Główna</a>
                 </li>
-                <li class="nav__list__item">
-                    <a href="realizacje.html" class="nav__list__link">Realizacje</a>
+                <li class="list__item">
+                    <a href="realizacje.html" class="list__link">Realizacje</a>
                 </li>
-                <li class="nav__list__item">
-                    <a href="o_mnie.html" class="nav__list__link">O mnie</a>
+                <li class="list__item">
+                    <a href="o-mnie.html" class="list__link">O mnie</a>
                 </li>
             </ul>
             <div class="nav__box">
-                <a href="o_mnie.html" class="btn nav__btn">Spieszy mi się!</a>
+                <a href="o-mnie.html" class="btn nav__btn">Spieszy mi się!</a>
             </div>
-            <div class="nav__social">
-                <a href="https://github.com/michalphs" target="_blank">
-                    <span class="fa fa-github nav__icon" aria-hidden="true"></span>
-                </a>
-                <a href="https://codepen.io/Michalphs" target="_blank">
-                    <span class="fa fa-codepen nav__icon" aria-hidden="true"></span>
-                </a>
-                <a href="https://linkedin.com/in/michalphs" target="_blank">
-                    <span class="fa fa-linkedin nav__icon" aria-hidden="true"></span>
-                </a>
-                <a href="mailto:michalphs@gmail.com" class="nav__mail">michalphs@gmail.com</a>
-            </div>
+            <ul class="nav__social social">
+                <li class="social__item">
+                    <a href="https://github.com/michalphs" target="_blank" class="social__link" title="Github">
+                        <span class="icon-github-circled social__icon" aria-hidden="true" aria-label="Github"></span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://codepen.io/Michalphs" target="_blank" class="social__link" title="Codepen">
+                        <span class="icon-codeopen social__icon" aria-hidden="true" aria-label="Codepen"></span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://linkedin.com/in/michalphs" target="_blank" class="social__link" title="Linkedin">
+                        <span class="icon-linkedin social__icon" aria-hidden="true" aria-label="Linkedin"></span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="mailto:michalphs@gmail.com" class="social__mail">michalphs@gmail.com</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <header class="header">
-        <div class="container header__container">
-            <div class="row header__row">
-                <hgroup class="header__hgroup">
-                    <h4 class="header__title">Cześć! Jestem</h4>
-                    <h1><span class="header__title--bold">Junior Front-End</span> Developerem</h1>
-                </hgroup>
-
+    <main class="home">
+        <div class="container home__container">
+            <div class="row home__row">
+                <header class="home__header header">
+                    <span class="header__title">Cześć! Jestem</span>
+                    <h1 class="header__title--big">
+                        <span class="header__title--bold">Junior Front-End</span> Developerem</h1>
+                </header>
             </div>
         </div>
-    </header>
+    </main>
     <script src="js/script.js"></script>
 </body>
 
